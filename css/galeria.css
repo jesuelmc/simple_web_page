@@ -1,0 +1,91 @@
+.galeria {
+    padding: 5% 10%;
+}
+
+.galeria H1 {
+    text-align: center;
+    color: black;
+    text-shadow: darkgrey 2px 2px;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.galeri-row {
+    display: flex;
+    margin: 1%;
+}
+
+.galeri-item {
+    flex: 1;
+    margin: 1%;
+    cursor: pointer;
+}
+
+.galeri-item img {
+    border: black solid 3px;
+}
+
+
+/* pop up */
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease;
+    background-origin: black 2px solid;
+    z-index: 10;
+    background-color: #fff;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 2px;
+}
+
+.modal-header {
+    padding: 10px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: black 2px solid;
+}
+
+.modal-header .title {
+    font-size: 1.20rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(10, 10, 10, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+    border-radius: 0;
+}

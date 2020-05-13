@@ -1,0 +1,25 @@
+.about-us {
+    padding: 5% 10%;
+    display: flex;
+    position: relative;
+}
+
+.descp {
+    width: 50%;
+    align-items: center;
+    flex: 1;
+    margin: auto 0;
+}
+
+.descp h2 {
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 35px;
+    margin-top: auto;
+}
+
+.about-img {
+    flex: 1;
+    width: 50%;
+}
